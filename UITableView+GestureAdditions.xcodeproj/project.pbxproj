@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		132CDBCB1B8A481A00725BC8 /* UITableView+GestureAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 132CDBCA1B8A481A00725BC8 /* UITableView+GestureAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		132CDBD11B8A481A00725BC8 /* UITableView+GestureAdditions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132CDBC51B8A481A00725BC8 /* UITableView+GestureAdditions.framework */; };
 		132CDBD81B8A481A00725BC8 /* UITableView_GestureAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDBD71B8A481A00725BC8 /* UITableView_GestureAdditionsTests.m */; };
+		132CDBE31B8A48B900725BC8 /* UITableView+GestureAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 132CDBE11B8A48B900725BC8 /* UITableView+GestureAdditions.h */; };
+		132CDBE41B8A48B900725BC8 /* UITableView+GestureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDBE21B8A48B900725BC8 /* UITableView+GestureAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +26,11 @@
 /* Begin PBXFileReference section */
 		132CDBC51B8A481A00725BC8 /* UITableView+GestureAdditions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "UITableView+GestureAdditions.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		132CDBC91B8A481A00725BC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		132CDBCA1B8A481A00725BC8 /* UITableView+GestureAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+GestureAdditions.h"; sourceTree = "<group>"; };
 		132CDBD01B8A481A00725BC8 /* UITableView+GestureAdditionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UITableView+GestureAdditionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		132CDBD61B8A481A00725BC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		132CDBD71B8A481A00725BC8 /* UITableView_GestureAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableView_GestureAdditionsTests.m; sourceTree = "<group>"; };
+		132CDBE11B8A48B900725BC8 /* UITableView+GestureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+GestureAdditions.h"; sourceTree = "<group>"; };
+		132CDBE21B8A48B900725BC8 /* UITableView+GestureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+GestureAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +73,8 @@
 		132CDBC71B8A481A00725BC8 /* UITableView+GestureAdditions */ = {
 			isa = PBXGroup;
 			children = (
-				132CDBCA1B8A481A00725BC8 /* UITableView+GestureAdditions.h */,
+				132CDBE11B8A48B900725BC8 /* UITableView+GestureAdditions.h */,
+				132CDBE21B8A48B900725BC8 /* UITableView+GestureAdditions.m */,
 				132CDBC81B8A481A00725BC8 /* Supporting Files */,
 			);
 			path = "UITableView+GestureAdditions";
@@ -109,7 +112,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				132CDBCB1B8A481A00725BC8 /* UITableView+GestureAdditions.h in Headers */,
+				132CDBE31B8A48B900725BC8 /* UITableView+GestureAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132CDBE41B8A48B900725BC8 /* UITableView+GestureAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

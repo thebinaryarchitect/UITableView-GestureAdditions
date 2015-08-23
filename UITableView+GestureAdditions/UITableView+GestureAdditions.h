@@ -6,14 +6,14 @@
 //  Copyright (c) 2015 Xiao Yao. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
-//! Project version number for UITableView+GestureAdditions.
-FOUNDATION_EXPORT double UITableView_GestureAdditionsVersionNumber;
+#pragma mark - UITableView
 
-//! Project version string for UITableView+GestureAdditions.
-FOUNDATION_EXPORT const unsigned char UITableView_GestureAdditionsVersionString[];
+#pragma mark - Public Interface (GestureAdditions)
 
-// In this header, you should import all the public headers of your framework using statements like #import <UITableView_GestureAdditions/PublicHeader.h>
-
-
+/**
+ *  Adds gesture based functionality to the UITableView class.
+ */
+@interface UITableView (GestureAdditions)
+@end
