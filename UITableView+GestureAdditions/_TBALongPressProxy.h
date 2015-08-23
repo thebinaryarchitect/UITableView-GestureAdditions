@@ -16,7 +16,7 @@
 /**
  *  A proxy object used to manage the long press reorder functionality for the UITableView class. This is a PRIVATE CLASS.
  */
-@interface _TBALongPressProxy : NSObject
+@interface _TBALongPressProxy : NSObject <UIGestureRecognizerDelegate>
 
 /**
  *  The table view.
@@ -29,7 +29,7 @@
 @property (nonatomic, assign, readwrite) BOOL enabled;
 
 /**
- *  The long press gesture recognizer used to reorder cells.
+ *  The long press gesture recognizer used to reorder cells. The proxy is the delegate.
  */
 @property (nonatomic, strong, readwrite) UILongPressGestureRecognizer *longPressGestureRecognizer;
 
