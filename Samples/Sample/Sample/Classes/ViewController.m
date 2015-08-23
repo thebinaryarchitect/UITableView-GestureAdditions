@@ -7,21 +7,23 @@
 //
 
 #import "ViewController.h"
+#import "RootViewController.h"
 
-@interface ViewController ()
+#pragma mark - ViewController
 
-@end
+#pragma mark - Public Implementation
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+#pragma mark Lifecycle
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    RootViewController *rootVC = [[RootViewController alloc] init];
+    self = [super initWithRootViewController:rootVC];
+    if (self) {
+        self.navigationBar.translucent = NO;
+    }
+    return self;
 }
 
 @end

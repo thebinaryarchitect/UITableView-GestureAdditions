@@ -6,9 +6,13 @@
 //  See LICENSE.txt for more information.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
-@interface ViewController : UIViewController
+#pragma mark - ViewController
+
+#pragma mark - Public Interface
+
+@interface ViewController : UINavigationController
 
 
 @end
