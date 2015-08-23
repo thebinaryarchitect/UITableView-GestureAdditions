@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		132CDBCB1B8A481A00725BC8 /* UITableView+GestureAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 132CDBCA1B8A481A00725BC8 /* UITableView+GestureAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		132CDBD11B8A481A00725BC8 /* UITableView+GestureAdditions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 132CDBC51B8A481A00725BC8 /* UITableView+GestureAdditions.framework */; };
+		132CDBD81B8A481A00725BC8 /* UITableView_GestureAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDBD71B8A481A00725BC8 /* UITableView_GestureAdditionsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		132CDBD21B8A481A00725BC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 132CDBBC1B8A481A00725BC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 132CDBC41B8A481A00725BC8;
+			remoteInfo = "UITableView+GestureAdditions";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		132CDBC51B8A481A00725BC8 /* UITableView+GestureAdditions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "UITableView+GestureAdditions.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		132CDBC91B8A481A00725BC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		132CDBCA1B8A481A00725BC8 /* UITableView+GestureAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+GestureAdditions.h"; sourceTree = "<group>"; };
+		132CDBD01B8A481A00725BC8 /* UITableView+GestureAdditionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UITableView+GestureAdditionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		132CDBD61B8A481A00725BC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		132CDBD71B8A481A00725BC8 /* UITableView_GestureAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableView_GestureAdditionsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		132CDBC11B8A481A00725BC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132CDBCD1B8A481A00725BC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132CDBD11B8A481A00725BC8 /* UITableView+GestureAdditions.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		132CDBBB1B8A481A00725BC8 = {
+			isa = PBXGroup;
+			children = (
+				132CDBC71B8A481A00725BC8 /* UITableView+GestureAdditions */,
+				132CDBD41B8A481A00725BC8 /* UITableView+GestureAdditionsTests */,
+				132CDBC61B8A481A00725BC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		132CDBC61B8A481A00725BC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				132CDBC51B8A481A00725BC8 /* UITableView+GestureAdditions.framework */,
+				132CDBD01B8A481A00725BC8 /* UITableView+GestureAdditionsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		132CDBC71B8A481A00725BC8 /* UITableView+GestureAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				132CDBCA1B8A481A00725BC8 /* UITableView+GestureAdditions.h */,
+				132CDBC81B8A481A00725BC8 /* Supporting Files */,
+			);
+			path = "UITableView+GestureAdditions";
+			sourceTree = "<group>";
+		};
+		132CDBC81B8A481A00725BC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				132CDBC91B8A481A00725BC8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		132CDBD41B8A481A00725BC8 /* UITableView+GestureAdditionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				132CDBD71B8A481A00725BC8 /* UITableView_GestureAdditionsTests.m */,
+				132CDBD51B8A481A00725BC8 /* Supporting Files */,
+			);
+			path = "UITableView+GestureAdditionsTests";
+			sourceTree = "<group>";
+		};
+		132CDBD51B8A481A00725BC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				132CDBD61B8A481A00725BC8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		132CDBC21B8A481A00725BC8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132CDBCB1B8A481A00725BC8 /* UITableView+GestureAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		132CDBC41B8A481A00725BC8 /* UITableView+GestureAdditions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 132CDBDB1B8A481A00725BC8 /* Build configuration list for PBXNativeTarget "UITableView+GestureAdditions" */;
+			buildPhases = (
+				132CDBC01B8A481A00725BC8 /* Sources */,
+				132CDBC11B8A481A00725BC8 /* Frameworks */,
+				132CDBC21B8A481A00725BC8 /* Headers */,
+				132CDBC31B8A481A00725BC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UITableView+GestureAdditions";
+			productName = "UITableView+GestureAdditions";
+			productReference = 132CDBC51B8A481A00725BC8 /* UITableView+GestureAdditions.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		132CDBCF1B8A481A00725BC8 /* UITableView+GestureAdditionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 132CDBDE1B8A481A00725BC8 /* Build configuration list for PBXNativeTarget "UITableView+GestureAdditionsTests" */;
+			buildPhases = (
+				132CDBCC1B8A481A00725BC8 /* Sources */,
+				132CDBCD1B8A481A00725BC8 /* Frameworks */,
+				132CDBCE1B8A481A00725BC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				132CDBD31B8A481A00725BC8 /* PBXTargetDependency */,
+			);
+			name = "UITableView+GestureAdditionsTests";
+			productName = "UITableView+GestureAdditionsTests";
+			productReference = 132CDBD01B8A481A00725BC8 /* UITableView+GestureAdditionsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		132CDBBC1B8A481A00725BC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Xiao Yao";
+				TargetAttributes = {
+					132CDBC41B8A481A00725BC8 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					132CDBCF1B8A481A00725BC8 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 132CDBBF1B8A481A00725BC8 /* Build configuration list for PBXProject "UITableView+GestureAdditions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 132CDBBB1B8A481A00725BC8;
+			productRefGroup = 132CDBC61B8A481A00725BC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				132CDBC41B8A481A00725BC8 /* UITableView+GestureAdditions */,
+				132CDBCF1B8A481A00725BC8 /* UITableView+GestureAdditionsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		132CDBC31B8A481A00725BC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132CDBCE1B8A481A00725BC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		132CDBC01B8A481A00725BC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132CDBCC1B8A481A00725BC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				132CDBD81B8A481A00725BC8 /* UITableView_GestureAdditionsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		132CDBD31B8A481A00725BC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 132CDBC41B8A481A00725BC8 /* UITableView+GestureAdditions */;
+			targetProxy = 132CDBD21B8A481A00725BC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		132CDBD91B8A481A00725BC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		132CDBDA1B8A481A00725BC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		132CDBDC1B8A481A00725BC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "UITableView+GestureAdditions/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		132CDBDD1B8A481A00725BC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "UITableView+GestureAdditions/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		132CDBDF1B8A481A00725BC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UITableView+GestureAdditionsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		132CDBE01B8A481A00725BC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UITableView+GestureAdditionsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		132CDBBF1B8A481A00725BC8 /* Build configuration list for PBXProject "UITableView+GestureAdditions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				132CDBD91B8A481A00725BC8 /* Debug */,
+				132CDBDA1B8A481A00725BC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		132CDBDB1B8A481A00725BC8 /* Build configuration list for PBXNativeTarget "UITableView+GestureAdditions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				132CDBDC1B8A481A00725BC8 /* Debug */,
+				132CDBDD1B8A481A00725BC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		132CDBDE1B8A481A00725BC8 /* Build configuration list for PBXNativeTarget "UITableView+GestureAdditionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				132CDBDF1B8A481A00725BC8 /* Debug */,
+				132CDBE01B8A481A00725BC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 132CDBBC1B8A481A00725BC8 /* Project object */;
+}
