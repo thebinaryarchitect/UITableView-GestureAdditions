@@ -16,7 +16,6 @@
 
 @implementation UITableView (GestureAdditions)
 @dynamic gestureDelegate;
-@dynamic longPressProxy;
 @dynamic enableLongPressReorder;
 @dynamic minimumPressDuration;
 
