@@ -113,7 +113,21 @@
             [self.displayLink invalidate];
             self.displayLink = nil;
             
-            CGRect frame =  self.selectedTableViewCell.frame;
+            CGRect frame = CGRectZero;
+            if ([self.tableView.gestureDelegate respondsToSelector:@selector(tableView:shouldCommitRowMoveAtIndexPath:toIndexPath:)]) {
+                BOOL commit = [self.tableView.gestureDelegate tableView:self.tableView shouldCommitRowMoveAtIndexPath:self.sourceIndexPath toIndexPath:indexPath];
+                if (commit) {
+                    if ([self.tableView.gestureDelegate respondsToSelector:@selector(tableView:commitRowMoveAtIndexPath:toIndexPath:)]) {
+                        [self.tableView.gestureDelegate tableView:self.tableView commitRowMoveAtIndexPath:self.sourceIndexPath toIndexPath:indexPath];
+                    }
+                    frame = self.selectedTableViewCell.frame;
+                } else {
+                    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:self.sourceIndexPath];
+                    frame = cell.frame;
+                }
+            } else {
+                frame = self.selectedTableViewCell.frame;
+            }
             
             [UIView animateWithDuration:0.25 animations:^{
                 self.snapshot.transform = CGAffineTransformMakeScale(1.0, 1.0);

@@ -8,6 +8,7 @@
 
 @import Foundation;
 @import UIKit;
+#import "UITableView+GestureAdditions.h"
 
 #pragma mark - _TBALongPressProxy
 

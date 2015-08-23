@@ -15,11 +15,20 @@
 #pragma mark - Public Implementation (GestureAdditions)
 
 @implementation UITableView (GestureAdditions)
+@dynamic gestureDelegate;
 @dynamic longPressProxy;
 @dynamic enableLongPressReorder;
 @dynamic minimumPressDuration;
 
 #pragma mark - LongPressProxy
+
+- (id<UITableViewGestureDelegate>)gestureDelegate {
+    return objc_getAssociatedObject(self, @selector(gestureDelegate));
+}
+
+- (void)setGestureDelegate:(id<UITableViewGestureDelegate>)gestureDelegate {
+    objc_setAssociatedObject(self, @selector(gestureDelegate), gestureDelegate, OBJC_ASSOCIATION_ASSIGN);
+}
 
 - (_TBALongPressProxy *)longPressProxy {
     _TBALongPressProxy *proxy = objc_getAssociatedObject(self, @selector(longPressProxy));
