@@ -11,6 +11,8 @@
 		132CDBD81B8A481A00725BC8 /* UITableView_GestureAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDBD71B8A481A00725BC8 /* UITableView_GestureAdditionsTests.m */; };
 		132CDBE31B8A48B900725BC8 /* UITableView+GestureAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 132CDBE11B8A48B900725BC8 /* UITableView+GestureAdditions.h */; };
 		132CDBE41B8A48B900725BC8 /* UITableView+GestureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDBE21B8A48B900725BC8 /* UITableView+GestureAdditions.m */; };
+		132CDBEB1B8A49FA00725BC8 /* _TBALongPressProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 132CDBE91B8A49FA00725BC8 /* _TBALongPressProxy.h */; };
+		132CDBEC1B8A49FA00725BC8 /* _TBALongPressProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDBEA1B8A49FA00725BC8 /* _TBALongPressProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		132CDBD71B8A481A00725BC8 /* UITableView_GestureAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITableView_GestureAdditionsTests.m; sourceTree = "<group>"; };
 		132CDBE11B8A48B900725BC8 /* UITableView+GestureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+GestureAdditions.h"; sourceTree = "<group>"; };
 		132CDBE21B8A48B900725BC8 /* UITableView+GestureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+GestureAdditions.m"; sourceTree = "<group>"; };
+		132CDBE91B8A49FA00725BC8 /* _TBALongPressProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TBALongPressProxy.h; sourceTree = "<group>"; };
+		132CDBEA1B8A49FA00725BC8 /* _TBALongPressProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TBALongPressProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 			children = (
 				132CDBE11B8A48B900725BC8 /* UITableView+GestureAdditions.h */,
 				132CDBE21B8A48B900725BC8 /* UITableView+GestureAdditions.m */,
+				132CDBE91B8A49FA00725BC8 /* _TBALongPressProxy.h */,
+				132CDBEA1B8A49FA00725BC8 /* _TBALongPressProxy.m */,
 				132CDBC81B8A481A00725BC8 /* Supporting Files */,
 			);
 			path = "UITableView+GestureAdditions";
@@ -113,6 +119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				132CDBE31B8A48B900725BC8 /* UITableView+GestureAdditions.h in Headers */,
+				132CDBEB1B8A49FA00725BC8 /* _TBALongPressProxy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132CDBEC1B8A49FA00725BC8 /* _TBALongPressProxy.m in Sources */,
 				132CDBE41B8A48B900725BC8 /* UITableView+GestureAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
