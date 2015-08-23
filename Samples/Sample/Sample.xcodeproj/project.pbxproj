@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		132CDBFC1B8A562D00725BC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDBFB1B8A562D00725BC8 /* main.m */; };
-		132CDBFF1B8A562D00725BC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDBFE1B8A562D00725BC8 /* AppDelegate.m */; };
-		132CDC021B8A562D00725BC8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDC011B8A562D00725BC8 /* ViewController.m */; };
 		132CDC051B8A562D00725BC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 132CDC031B8A562D00725BC8 /* Main.storyboard */; };
 		132CDC071B8A562D00725BC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 132CDC061B8A562D00725BC8 /* Images.xcassets */; };
 		132CDC0A1B8A562D00725BC8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 132CDC081B8A562D00725BC8 /* LaunchScreen.xib */; };
 		132CDC161B8A562D00725BC8 /* SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDC151B8A562D00725BC8 /* SampleTests.m */; };
 		132CDC251B8A563A00725BC8 /* _TBALongPressProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDC211B8A563A00725BC8 /* _TBALongPressProxy.m */; };
 		132CDC271B8A563A00725BC8 /* UITableView+GestureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDC241B8A563A00725BC8 /* UITableView+GestureAdditions.m */; };
+		132CDC361B8A56B500725BC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDC2D1B8A56B500725BC8 /* AppDelegate.m */; };
+		132CDC381B8A56B500725BC8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDC311B8A56B500725BC8 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +32,6 @@
 		132CDBF61B8A562D00725BC8 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		132CDBFA1B8A562D00725BC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		132CDBFB1B8A562D00725BC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		132CDBFD1B8A562D00725BC8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		132CDBFE1B8A562D00725BC8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		132CDC001B8A562D00725BC8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		132CDC011B8A562D00725BC8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		132CDC041B8A562D00725BC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		132CDC061B8A562D00725BC8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		132CDC091B8A562D00725BC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -46,6 +42,10 @@
 		132CDC211B8A563A00725BC8 /* _TBALongPressProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TBALongPressProxy.m; sourceTree = "<group>"; };
 		132CDC231B8A563A00725BC8 /* UITableView+GestureAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+GestureAdditions.h"; sourceTree = "<group>"; };
 		132CDC241B8A563A00725BC8 /* UITableView+GestureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+GestureAdditions.m"; sourceTree = "<group>"; };
+		132CDC2C1B8A56B500725BC8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		132CDC2D1B8A56B500725BC8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		132CDC301B8A56B500725BC8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		132CDC311B8A56B500725BC8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +88,8 @@
 		132CDBF81B8A562D00725BC8 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
-				132CDBFD1B8A562D00725BC8 /* AppDelegate.h */,
-				132CDBFE1B8A562D00725BC8 /* AppDelegate.m */,
-				132CDC001B8A562D00725BC8 /* ViewController.h */,
-				132CDC011B8A562D00725BC8 /* ViewController.m */,
+				132CDC2B1B8A56B500725BC8 /* Classes */,
+				132CDC321B8A56B500725BC8 /* Resources */,
 				132CDC031B8A562D00725BC8 /* Main.storyboard */,
 				132CDC061B8A562D00725BC8 /* Images.xcassets */,
 				132CDC081B8A562D00725BC8 /* LaunchScreen.xib */,
@@ -136,6 +134,48 @@
 			);
 			name = "UITableView+GestureAdditions";
 			path = "../../UITableView+GestureAdditions";
+			sourceTree = "<group>";
+		};
+		132CDC2B1B8A56B500725BC8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				132CDC2C1B8A56B500725BC8 /* AppDelegate.h */,
+				132CDC2D1B8A56B500725BC8 /* AppDelegate.m */,
+				132CDC301B8A56B500725BC8 /* ViewController.h */,
+				132CDC311B8A56B500725BC8 /* ViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		132CDC321B8A56B500725BC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				132CDC331B8A56B500725BC8 /* Audio */,
+				132CDC341B8A56B500725BC8 /* Data */,
+				132CDC351B8A56B500725BC8 /* Graphics */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		132CDC331B8A56B500725BC8 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		132CDC341B8A56B500725BC8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		132CDC351B8A56B500725BC8 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132CDC381B8A56B500725BC8 /* ViewController.m in Sources */,
+				132CDC361B8A56B500725BC8 /* AppDelegate.m in Sources */,
 				132CDC251B8A563A00725BC8 /* _TBALongPressProxy.m in Sources */,
-				132CDC021B8A562D00725BC8 /* ViewController.m in Sources */,
-				132CDBFF1B8A562D00725BC8 /* AppDelegate.m in Sources */,
 				132CDC271B8A563A00725BC8 /* UITableView+GestureAdditions.m in Sources */,
 				132CDBFC1B8A562D00725BC8 /* main.m in Sources */,
 			);
