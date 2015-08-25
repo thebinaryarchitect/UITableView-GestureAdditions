@@ -54,6 +54,11 @@
             self.selectedTableViewCell = cell;
             self.sourceIndexPath = indexPath;
             
+            UIEdgeInsets inset = self.selectedTableViewCell.separatorInset;
+            CGFloat right = inset.right;
+            inset.right = NSIntegerMax;
+            self.selectedTableViewCell.separatorInset = inset;
+            
             UIGraphicsBeginImageContextWithOptions(cell.bounds.size, NO, 0.0);
             [cell.layer renderInContext:UIGraphicsGetCurrentContext()];
             UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
@@ -71,6 +76,9 @@
             snapshot.alpha = 0.0;
             [self.tableView addSubview:snapshot];
             self.snapshot = snapshot;
+            
+            inset.right = right;
+            self.selectedTableViewCell.separatorInset = inset;
             
             [UIView animateWithDuration:0.25 animations:^{
                 self.snapshot.transform = CGAffineTransformMakeScale(1.025, 1.025);
