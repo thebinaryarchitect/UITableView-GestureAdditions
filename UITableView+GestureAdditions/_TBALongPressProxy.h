@@ -57,7 +57,7 @@
 /**
  *  The index path of the selected cell at the beginning of the gesture.
  */
-@property (nonatomic, assign, readwrite) NSIndexPath *sourceIndexPath;
+@property (nonatomic, strong, readwrite) NSIndexPath *sourceIndexPath;
 
 /**
  *  The designated initializer.
