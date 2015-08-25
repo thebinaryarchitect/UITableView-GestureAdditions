@@ -64,4 +64,23 @@
  */
 @property (nonatomic, assign, readwrite) CGFloat minimumPressDuration;
 
+/**
+ *  Tracks if horizontal pan gesture is enabled.
+ */
+@property (nonatomic, assign, readwrite) BOOL enableHorizontalPan;
+
+/**
+ *  The minimum x-value for the origin point of the frame of the selected cell.
+ *  
+ *  Setting this value to 0.0 prevents panning to the left.
+ */
+@property (nonatomic, assign, readwrite) CGFloat minimumHorizontalOffset;
+
+/**
+ *  The maximum x-value for the origin point of the frame of the selected cell.
+ *
+ *  Setting this value to the size of the table view width prevents panning to the right.
+ */
+@property (nonatomic, assign, readwrite) CGFloat maximumHorizontalOffset;
+
 @end

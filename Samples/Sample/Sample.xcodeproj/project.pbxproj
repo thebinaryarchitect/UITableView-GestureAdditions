@@ -17,6 +17,7 @@
 		132CDC361B8A56B500725BC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDC2D1B8A56B500725BC8 /* AppDelegate.m */; };
 		132CDC381B8A56B500725BC8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDC311B8A56B500725BC8 /* ViewController.m */; };
 		132CDC3B1B8A56D300725BC8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDC3A1B8A56D300725BC8 /* RootViewController.m */; };
+		137C25591B8C0D5300CFB7F8 /* _TBAHorizontalPanProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 137C25581B8C0D5300CFB7F8 /* _TBAHorizontalPanProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		132CDC311B8A56B500725BC8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		132CDC391B8A56D300725BC8 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		132CDC3A1B8A56D300725BC8 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		137C25571B8C0D5300CFB7F8 /* _TBAHorizontalPanProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TBAHorizontalPanProxy.h; sourceTree = "<group>"; };
+		137C25581B8C0D5300CFB7F8 /* _TBAHorizontalPanProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TBAHorizontalPanProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 		132CDC1F1B8A563A00725BC8 /* UITableView+GestureAdditions */ = {
 			isa = PBXGroup;
 			children = (
+				137C25571B8C0D5300CFB7F8 /* _TBAHorizontalPanProxy.h */,
+				137C25581B8C0D5300CFB7F8 /* _TBAHorizontalPanProxy.m */,
 				132CDC201B8A563A00725BC8 /* _TBALongPressProxy.h */,
 				132CDC211B8A563A00725BC8 /* _TBALongPressProxy.m */,
 				132CDC231B8A563A00725BC8 /* UITableView+GestureAdditions.h */,
@@ -287,6 +292,7 @@
 				132CDC361B8A56B500725BC8 /* AppDelegate.m in Sources */,
 				132CDC3B1B8A56D300725BC8 /* RootViewController.m in Sources */,
 				132CDC251B8A563A00725BC8 /* _TBALongPressProxy.m in Sources */,
+				137C25591B8C0D5300CFB7F8 /* _TBAHorizontalPanProxy.m in Sources */,
 				132CDC271B8A563A00725BC8 /* UITableView+GestureAdditions.m in Sources */,
 				132CDBFC1B8A562D00725BC8 /* main.m in Sources */,
 			);
@@ -485,6 +491,7 @@
 				132CDC1B1B8A562D00725BC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		132CDC1C1B8A562D00725BC8 /* Build configuration list for PBXNativeTarget "SampleTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +500,7 @@
 				132CDC1E1B8A562D00725BC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

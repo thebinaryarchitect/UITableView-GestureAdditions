@@ -13,6 +13,8 @@
 		132CDBE41B8A48B900725BC8 /* UITableView+GestureAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDBE21B8A48B900725BC8 /* UITableView+GestureAdditions.m */; };
 		132CDBEB1B8A49FA00725BC8 /* _TBALongPressProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 132CDBE91B8A49FA00725BC8 /* _TBALongPressProxy.h */; };
 		132CDBEC1B8A49FA00725BC8 /* _TBALongPressProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 132CDBEA1B8A49FA00725BC8 /* _TBALongPressProxy.m */; };
+		137C255C1B8C0D7D00CFB7F8 /* _TBAHorizontalPanProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 137C255A1B8C0D7D00CFB7F8 /* _TBAHorizontalPanProxy.h */; };
+		137C255D1B8C0D7D00CFB7F8 /* _TBAHorizontalPanProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 137C255B1B8C0D7D00CFB7F8 /* _TBAHorizontalPanProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		132CDBE21B8A48B900725BC8 /* UITableView+GestureAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+GestureAdditions.m"; sourceTree = "<group>"; };
 		132CDBE91B8A49FA00725BC8 /* _TBALongPressProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TBALongPressProxy.h; sourceTree = "<group>"; };
 		132CDBEA1B8A49FA00725BC8 /* _TBALongPressProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TBALongPressProxy.m; sourceTree = "<group>"; };
+		137C255A1B8C0D7D00CFB7F8 /* _TBAHorizontalPanProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TBAHorizontalPanProxy.h; sourceTree = "<group>"; };
+		137C255B1B8C0D7D00CFB7F8 /* _TBAHorizontalPanProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TBAHorizontalPanProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				132CDBE11B8A48B900725BC8 /* UITableView+GestureAdditions.h */,
 				132CDBE21B8A48B900725BC8 /* UITableView+GestureAdditions.m */,
+				137C255A1B8C0D7D00CFB7F8 /* _TBAHorizontalPanProxy.h */,
+				137C255B1B8C0D7D00CFB7F8 /* _TBAHorizontalPanProxy.m */,
 				132CDBE91B8A49FA00725BC8 /* _TBALongPressProxy.h */,
 				132CDBEA1B8A49FA00725BC8 /* _TBALongPressProxy.m */,
 				132CDBC81B8A481A00725BC8 /* Supporting Files */,
@@ -120,6 +126,7 @@
 			files = (
 				132CDBE31B8A48B900725BC8 /* UITableView+GestureAdditions.h in Headers */,
 				132CDBEB1B8A49FA00725BC8 /* _TBALongPressProxy.h in Headers */,
+				137C255C1B8C0D7D00CFB7F8 /* _TBAHorizontalPanProxy.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				137C255D1B8C0D7D00CFB7F8 /* _TBAHorizontalPanProxy.m in Sources */,
 				132CDBEC1B8A49FA00725BC8 /* _TBALongPressProxy.m in Sources */,
 				132CDBE41B8A48B900725BC8 /* UITableView+GestureAdditions.m in Sources */,
 			);
@@ -410,6 +418,7 @@
 				132CDBDD1B8A481A00725BC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		132CDBDE1B8A481A00725BC8 /* Build configuration list for PBXNativeTarget "UITableView+GestureAdditionsTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +427,7 @@
 				132CDBE01B8A481A00725BC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

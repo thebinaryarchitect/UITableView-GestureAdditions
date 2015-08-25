@@ -7,6 +7,7 @@
 //
 
 #import "UITableView+GestureAdditions.h"
+#import "_TBAHorizontalPanProxy.h"
 #import "_TBALongPressProxy.h"
 #import <objc/runtime.h>
 
@@ -18,6 +19,9 @@
 @dynamic gestureDelegate;
 @dynamic enableLongPressReorder;
 @dynamic minimumPressDuration;
+@dynamic enableHorizontalPan;
+@dynamic minimumHorizontalOffset;
+@dynamic maximumHorizontalOffset;
 
 #pragma mark - LongPressProxy
 
@@ -56,6 +60,45 @@
 
 - (void)setMinimumPressDuration:(CGFloat)minimumPressDuration {
     self.longPressProxy.longPressGestureRecognizer.minimumPressDuration = minimumPressDuration;
+}
+
+#pragma mark HorizontalPanProxy
+
+- (_TBAHorizontalPanProxy *)horizontalPanProxy {
+    _TBAHorizontalPanProxy *proxy = objc_getAssociatedObject(self, @selector(horizontalPanProxy));
+    if (!proxy) {
+        proxy = [[_TBAHorizontalPanProxy alloc] initWithTableView:self];
+        self.horizontalPanProxy = proxy;
+    }
+    return proxy;
+}
+
+- (void)setHorizontalPanProxy:(_TBAHorizontalPanProxy *)horizontalPanProxy {
+    objc_setAssociatedObject(self, @selector(horizontalPanProxy), horizontalPanProxy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (BOOL)enableHorizontalPan {
+    return self.horizontalPanProxy.enabled;
+}
+
+- (void)setEnableHorizontalPan:(BOOL)enableHorizontalPan {
+    self.horizontalPanProxy.enabled = enableHorizontalPan;
+}
+
+- (CGFloat)minimumHorizontalOffset {
+    return self.horizontalPanProxy.minimumHorizontalOffset;
+}
+
+- (void)setMinimumHorizontalOffset:(CGFloat)minimumHorizontalOffset {
+    self.horizontalPanProxy.minimumHorizontalOffset = minimumHorizontalOffset;
+}
+
+- (CGFloat)maximumHorizontalOffset {
+    return self.horizontalPanProxy.maximumHorizontalOffset;
+}
+
+- (void)setMaximumHorizontalOffset:(CGFloat)maximumHorizontalOffset {
+    self.horizontalPanProxy.maximumHorizontalOffset = maximumHorizontalOffset;
 }
 
 @end
