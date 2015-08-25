@@ -13,6 +13,8 @@
  */
 @protocol UITableViewGestureDelegate <NSObject>
 
+@optional
+
 /**
  *  Called when a reorder is about to happen.
  *
