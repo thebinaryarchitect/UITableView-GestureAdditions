@@ -82,21 +82,20 @@
     
     // Update data source
     NSMutableArray *sObjects = self.objects[sourceIndexPath.section];
-    NSString *text = [NSString stringWithFormat:@"Moved cell from section %i row %i to section %i row %i", destinationIndexPath.section, destinationIndexPath.row, sourceIndexPath.section, sourceIndexPath.row];
-    [sObjects replaceObjectAtIndex:dRow withObject:text];
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:destinationIndexPath];
-    cell.textLabel.text = text;
-    
-    text = [NSString stringWithFormat:@"Moved cell from section %i row %i to sectio %i row %i", sourceIndexPath.section, sourceIndexPath.row, destinationIndexPath.section, destinationIndexPath.row];
-    [sObjects replaceObjectAtIndex:sRow withObject:text];
-    cell = [tableView cellForRowAtIndexPath:sourceIndexPath];
-    cell.textLabel.text = text;
-    
-    // 
-    if (sourceIndexPath.section != destinationIndexPath.section) {
-        NSString *text = sObjects[sRow];
+    if (sourceIndexPath.section == destinationIndexPath.section) {
+        NSString *text = [NSString stringWithFormat:@"Moved cell from section %i row %i to section %i row %i", destinationIndexPath.section, destinationIndexPath.row, sourceIndexPath.section, sourceIndexPath.row];
+        [sObjects replaceObjectAtIndex:dRow withObject:text];
+        UITableViewCell *cell = [tableView cellForRowAtIndexPath:destinationIndexPath];
+        cell.textLabel.text = text;
+        
+        text = [NSString stringWithFormat:@"Moved cell from section %i row %i to sectio %i row %i", sourceIndexPath.section, sourceIndexPath.row, destinationIndexPath.section, destinationIndexPath.row];
+        [sObjects replaceObjectAtIndex:sRow withObject:text];
+        cell = [tableView cellForRowAtIndexPath:sourceIndexPath];
+        cell.textLabel.text = text;
+    } else {
         [sObjects removeObjectAtIndex:sRow];
         
+        NSString *text = [NSString stringWithFormat:@"Moved cell from section %i row %i to sectio %i row %i", sourceIndexPath.section, sourceIndexPath.row, destinationIndexPath.section, destinationIndexPath.row];
         NSMutableArray *dObjects = self.objects[destinationIndexPath.section];
         [dObjects insertObject:text atIndex:destinationIndexPath.row];
     }

@@ -150,7 +150,7 @@
     CGPoint touchLocation = [self.longPressGestureRecognizer locationInView:self.longPressGestureRecognizer.view];
     NSIndexPath *selectedIndexPath = [self.tableView indexPathForCell:self.selectedTableViewCell];
     NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:touchLocation];
-    if (![selectedIndexPath isEqual:indexPath] && indexPath) {
+    if (![selectedIndexPath isEqual:indexPath] && indexPath && selectedIndexPath) {
         if ([self.tableView.dataSource respondsToSelector:@selector(tableView:moveRowAtIndexPath:toIndexPath:)]) {
             [self.tableView.dataSource tableView:self.tableView moveRowAtIndexPath:selectedIndexPath toIndexPath:indexPath];
         }
