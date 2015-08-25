@@ -42,6 +42,7 @@
     [super viewDidLoad];
     
     self.tableView.enableLongPressReorder = YES;
+    self.tableView.enableHorizontalPan = YES;
     self.tableView.gestureDelegate = self;
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
@@ -60,6 +61,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
+    cell.contentView.backgroundColor = [UIColor clearColor];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.detailTextLabel.backgroundColor = [UIColor clearColor];
     NSMutableArray *objects = self.objects[indexPath.section];
     NSString *text = objects[indexPath.row];
     cell.textLabel.text = text;
@@ -111,6 +115,36 @@
     if (sourceIndexPath.section == destinationIndexPath.section) {
         
     }
+}
+
+- (void)tableView:(UITableView *)tableView willBeginHorizontalPan:(UITableViewCell *)cell {
+    cell.backgroundColor = [UIColor blueColor];
+    cell.textLabel.textColor = [UIColor whiteColor];
+}
+
+- (void)tableView:(UITableView *)tableView didPanHorizontally:(UITableViewCell *)cell {
+    CGFloat xOffset = cell.frame.origin.x;
+    if (xOffset > 120.0) {
+        cell.backgroundColor = [UIColor redColor];
+    } else {
+        cell.backgroundColor = [UIColor blueColor];
+    }
+}
+
+- (BOOL)tableView:(UITableView *)tableView didEndHorizontalPan:(UITableViewCell *)cell {
+    cell.backgroundColor = [UIColor whiteColor];
+    cell.textLabel.textColor = [UIColor blackColor];
+    CGRect frame = cell.frame;
+    // Delete cell and update data source.
+    // The 120.0 is arbitrary.
+    if (frame.origin.x > 120.0) {
+        NSIndexPath *indexPath = [tableView indexPathForCell:cell];
+        NSMutableArray *objects = self.objects[indexPath.section];
+        [objects removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
+        return NO;
+    }
+    return YES;
 }
 
 @end
