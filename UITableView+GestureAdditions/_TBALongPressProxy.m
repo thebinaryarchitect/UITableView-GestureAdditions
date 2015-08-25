@@ -115,6 +115,7 @@
             
             CGRect frame = CGRectZero;
             if ([self.tableView.gestureDelegate respondsToSelector:@selector(tableView:shouldCommitRowMoveAtIndexPath:toIndexPath:)]) {
+
                 BOOL commit = [self.tableView.gestureDelegate tableView:self.tableView shouldCommitRowMoveAtIndexPath:self.sourceIndexPath toIndexPath:indexPath];
                 if (commit) {
                     if ([self.tableView.gestureDelegate respondsToSelector:@selector(tableView:commitRowMoveAtIndexPath:toIndexPath:)]) {
