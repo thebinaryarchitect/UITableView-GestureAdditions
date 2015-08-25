@@ -50,7 +50,29 @@
 #pragma mark Private
 
 - (void)handlePan:(UIPanGestureRecognizer *)recognizer {
-    
+    switch (recognizer.state) {
+        case UIGestureRecognizerStateBegan: {
+            CGPoint touchLocation = [recognizer locationInView:recognizer.view];
+            NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:touchLocation];
+            UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+            self.selectedTableViewCell = cell;
+            break;
+        }
+        case UIGestureRecognizerStateChanged: {
+            CGPoint translation = [recognizer translationInView:recognizer.view];
+            CGRect frame = self.selectedTableViewCell.frame;
+            frame.origin.x += translation.x;
+            frame.origin.x = MAX(frame.origin.x, self.minimumHorizontalOffset);
+            frame.origin.x = MIN(frame.origin.x, self.maximumHorizontalOffset);
+            self.selectedTableViewCell.frame = frame;
+            [recognizer setTranslation:CGPointZero inView:recognizer.view];
+            break;
+        }
+        default: {
+            self.selectedTableViewCell = nil;
+            break;
+        }
+    }
 }
 
 #pragma mark UIGestureRecognizerDelegate

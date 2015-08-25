@@ -43,6 +43,11 @@
 @property (nonatomic, assign, readwrite) CGFloat maximumHorizontalOffset;
 
 /**
+ *  The selected table view cell.
+ */
+@property (nonatomic, strong, readwrite) UITableViewCell *selectedTableViewCell;
+
+/**
  *  The designated initilizer.
  *
  *  @param tableView The table view.
