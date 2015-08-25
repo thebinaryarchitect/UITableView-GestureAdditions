@@ -28,7 +28,7 @@
         self.panGestureRecognizer = panRecognizer;
         
         self.minimumHorizontalOffset = -tableView.frame.size.width;
-        self.maximumHorizontalOffset = -tableView.frame.size.height;
+        self.maximumHorizontalOffset = tableView.frame.size.width;
     }
     return self;
 }
