@@ -33,6 +33,31 @@
  */
 - (void)tableView:(UITableView *)tableView commitRowMoveAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath;
 
+/**
+ *  Called before the pan begins.
+ *
+ *  @param tableView The table view.
+ *  @param cell      The selected table view cell.
+ */
+- (void)tableView:(UITableView *)tableView willBeginHorizontalPan:(UITableViewCell *)cell;
+
+/**
+ *  Called when the selected cell is moved.
+ *
+ *  @param tableView The table view.
+ *  @param cell      The selected table view cell.
+ */
+- (void)tableView:(UITableView *)tableView didPanHorizontally:(UITableViewCell *)cell;
+
+/**
+ *  Called when the pan has ended.
+ *
+ *  @param tableView The table view.
+ *  @param cell      The selected table view cell.
+ *
+ *  @return YES to animate the cell back to the original position.
+ */
+- (BOOL)tableView:(UITableView *)tableView didEndHorizontalPan:(UITableViewCell *)cell;
 
 @end
 

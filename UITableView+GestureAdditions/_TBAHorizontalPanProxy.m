@@ -56,20 +56,53 @@
             NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:touchLocation];
             UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
             self.selectedTableViewCell = cell;
+            
+            if (self.selectedTableViewCell) {
+                if ([self.tableView.gestureDelegate respondsToSelector:@selector(tableView:willBeginHorizontalPan:)]) {
+                    [self.tableView.gestureDelegate tableView:self.tableView willBeginHorizontalPan:self.selectedTableViewCell];
+                }
+            }
+            
             break;
         }
         case UIGestureRecognizerStateChanged: {
-            CGPoint translation = [recognizer translationInView:recognizer.view];
-            CGRect frame = self.selectedTableViewCell.frame;
-            frame.origin.x += translation.x;
-            frame.origin.x = MAX(frame.origin.x, self.minimumHorizontalOffset);
-            frame.origin.x = MIN(frame.origin.x, self.maximumHorizontalOffset);
-            self.selectedTableViewCell.frame = frame;
-            [recognizer setTranslation:CGPointZero inView:recognizer.view];
+            if (self.selectedTableViewCell) {
+                CGPoint translation = [recognizer translationInView:recognizer.view];
+                CGRect frame = self.selectedTableViewCell.frame;
+                frame.origin.x += translation.x;
+                frame.origin.x = MAX(frame.origin.x, self.minimumHorizontalOffset);
+                frame.origin.x = MIN(frame.origin.x, self.maximumHorizontalOffset);
+                self.selectedTableViewCell.frame = frame;
+                [recognizer setTranslation:CGPointZero inView:recognizer.view];
+            
+                if ([self.tableView.gestureDelegate respondsToSelector:@selector(tableView:didPanHorizontally:)]) {
+                    [self.tableView.gestureDelegate tableView:self.tableView didPanHorizontally:self.selectedTableViewCell];
+                }
+            }
+            
             break;
         }
         default: {
-            self.selectedTableViewCell = nil;
+            if (self.selectedTableViewCell) {
+                BOOL moveBack = NO;
+                if ([self.tableView.gestureDelegate respondsToSelector:@selector(tableView:didEndHorizontalPan:)]) {
+                    moveBack = [self.tableView.gestureDelegate tableView:self.tableView didEndHorizontalPan:self.selectedTableViewCell];
+                } else {
+                    moveBack = YES;
+                }
+                
+                if (moveBack) {
+                    [UIView animateWithDuration:0.25 animations:^{
+                        CGRect frame = self.selectedTableViewCell.frame;
+                        frame.origin.x = 0.0;
+                        self.selectedTableViewCell.frame = frame;
+                    } completion:^(BOOL finished) {
+                        self.selectedTableViewCell = nil;
+                    }];
+                } else {
+                    self.selectedTableViewCell = nil;
+                }
+            }
             break;
         }
     }
