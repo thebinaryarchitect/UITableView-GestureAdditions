@@ -46,6 +46,45 @@
     self.tableView.gestureDelegate = self;
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
+    
+    // Toggle for long press
+    UIBarButtonItem *fixedItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    fixedItem.width = 15.0;
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+    label.text = @"Long Press Enabled";
+    [label sizeToFit];
+    UIBarButtonItem *labelItem = [[UIBarButtonItem alloc] initWithCustomView:label];
+    
+    UISwitch *toggle = [[UISwitch alloc] initWithFrame:CGRectZero];
+    toggle.on = self.tableView.enableLongPressReorder;
+    [toggle addTarget:self action:@selector(toggleLongPressReorder:) forControlEvents:UIControlEventValueChanged];
+    UIBarButtonItem *toggleItem = [[UIBarButtonItem alloc] initWithCustomView:toggle];
+    
+    self.navigationItem.leftBarButtonItems = @[labelItem, fixedItem, toggleItem];
+    
+    // Toggle for horizontal pan
+    label = [[UILabel alloc] initWithFrame:CGRectZero];
+    label.text = @"Horizontal Pan Enabled";
+    [label sizeToFit];
+    labelItem = [[UIBarButtonItem alloc] initWithCustomView:label];
+    
+    toggle = [[UISwitch alloc] initWithFrame:CGRectZero];
+    toggle.on = self.tableView.enableHorizontalPan;
+    [toggle addTarget:self action:@selector(toggleHorizontalPan:) forControlEvents:UIControlEventValueChanged];
+    toggleItem = [[UIBarButtonItem alloc] initWithCustomView:toggle];
+    
+    self.navigationItem.rightBarButtonItems = @[toggleItem, fixedItem, labelItem];
+}
+
+#pragma mark Private
+
+- (void)toggleLongPressReorder:(UISwitch *)control {
+    self.tableView.enableLongPressReorder = control.on;
+}
+
+- (void)toggleHorizontalPan:(UISwitch *)control {
+    self.tableView.enableHorizontalPan = control.on;
 }
 
 #pragma mark UITableViewDataSource
